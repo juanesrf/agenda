@@ -10,11 +10,9 @@ package co.edu.uniquindio.poo;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.logging.Logger;
 import org.junit.jupiter.api.Test;
 
 /**
