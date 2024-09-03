@@ -152,6 +152,15 @@ public class AppTest {
     @Test
 
     public void testEliminarContactoAsistente(){
-        
+        Contacto contacto = new Contacto("Pepe", "Pepito", "Casa", "312321314", "hola@a.");
+        agenda.crearContacto(contacto);
+        LocalDate localDate = LocalDate.now();
+        LocalTime localTime = LocalTime.now();
+        Reunion reunion= new Reunion("salida", localDate, localTime);
+        agenda.crearReunion(reunion);
+        agenda.anadirContacto(reunion,contacto);
+        agenda.eliminarContactoAsis(reunion, contacto);
+        assertEquals(0, agenda.getReuniones().get(0).getListaContactosAsistentes().size());
+
     }
 }
